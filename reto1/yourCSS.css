@@ -1,0 +1,36 @@
+/* 
+IMPORTANTE: USAR UN SOLO DIV
+Colors:
+  Background: #293462
+  Background-circle: #FFF1C1
+  Mountains: #FE5F55
+*/
+.bg {
+  width: 400px;
+  height: 300px;
+  background: #293462;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bg__paint{
+  position: relative;
+  background-color:#FFF1C1;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.bg__paint::after{
+  content: '';
+  display: block;
+  position: absolute;
+  z-index: 10;
+  width: 200px;
+  height: 200px;
+  left: 7%;
+  top: 12%;
+  background-color:#FE5F55;
+  clip-path: polygon(18% 62%, 59% 15%, 100% 59%, 100% 80%, 100% 100%, 26% 100%, 0 66%, 8% 53%);
+}
