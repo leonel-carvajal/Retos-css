@@ -12,32 +12,37 @@ Colors:
   justify-content: center;
   align-items: center;
 }
-.shape{
-  background-color:#243D83;
+
+.shape {
+  background-color: #243D83;
   width: 100px;
   height: 250px;
   position: relative;
 }
-.shape::after{
+
+.shape::after {
   content: '';
   display: block;
-  width: 150px;
-  height: 75px;
   position: absolute;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-right: 50px solid transparent;
+  border-top: 50px solid transparent;
+  border-left: 50px solid transparent;
+  border-bottom: 50px solid #6592cf;
   transform: rotate(180deg);
-  background-color: #6592cf;
-  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-  top: -20px;
-  left: -25px;
 }
-.shape::before{
+
+.shape::before {
   content: '';
   display: block;
-  width: 150px;
-  height: 75px;
   position: absolute;
-  background-color: #6592cf;
-  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-  bottom: -20px;
-  left: -25px;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-right: 50px solid transparent;
+  border-top: 50px solid transparent;
+  border-left: 50px solid transparent;
+  border-bottom: 50px solid #6592cf;
 }
