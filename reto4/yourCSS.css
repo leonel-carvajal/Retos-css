@@ -15,7 +15,7 @@ Colors:
   align-items: center;
 }
 .circle{
-  background-color: rgba(79, 119, 255,0.8);
+  background-color: rgba(79, 119, 255,1);
   width: 150px;
   height: 150px;
   border-radius: 50%;
@@ -30,7 +30,7 @@ Colors:
   background-color: #f9e492;
   position: absolute;
   bottom: -55px;
-  left: 1px;
+  left: 0;
   transform: translateZ(-1px);
 }
 .circle::before{
@@ -40,6 +40,7 @@ Colors:
   height: 86px;
   border-radius: 0 0 7% 100%;
   position: absolute;
-  background-color: rgba(154, 213, 255,0.7);
+  background-color: rgba(154, 213, 255,0.9);
   top: 65px;
+  transform: translateX(-0.5px);
 }
