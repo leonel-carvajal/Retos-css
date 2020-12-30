@@ -9,4 +9,46 @@ Colors:
   width: 400px;
   height: 300px;
   background-color: #19191a;
+  position: relative;
+}
+
+.image {
+  position: relative;
+  top: 20%;
+  left: 40%;
+  width: 100px;
+  height: 50px;
+  background-color: #4F77FF;
+  border-radius: 100px 100px 0 0;
+  transform: rotate(90deg);
+}
+
+.image::after {
+  content: '';
+  display: block;
+  width: 100px;
+  height: 50px;
+  background-color: #4F77FF;
+  border-radius: 100px 100px 0 0;
+  transform: rotate(180deg) translateX(-100%) translateY(-100%);
+}
+
+.image-2 {
+  position: relative;
+  top: 11.2%;
+  left: 21.2%;
+  width: 100px;
+  height: 50px;
+  background-color: #F9E492;
+  border-radius: 100px 100px 0 0;
+}
+
+.image-2::after {
+  content: '';
+  display: block;
+  width: 100px;
+  height: 50px;
+  background-color: #F9E492;
+  border-radius: 100px 100px 0 0;
+  transform: rotate(180deg) translateX(-100%) translateY(-100%);
 }
